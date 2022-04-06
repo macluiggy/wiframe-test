@@ -18,7 +18,7 @@ function App() {
       setTimeout(() => {
         setVideo(video3);
         setLoop(true);
-      }, 4000);
+      }, 4500);
     } else if (video === video3) {
       setVideo(video4);
       setLoop(false);
