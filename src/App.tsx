@@ -37,23 +37,24 @@ function App() {
       </video> */}
       <button
         onClick={changeVideo}
-        className='btn btn-compact-footprint'
+        className="btn btn-compact-footprint"
         style={{
           display: video === video1 ? "block" : "none",
         }}
       >
-        {video === video3 ? "return to normal" : "compact footprint"}
+        compact footprint
       </button>
-      <div className="description">
-        {video === video3 && (
-          <>
-            <button className="btn">Compact footprint</button>
-            <p>
-              Smallest, fully contained palletizing unit for a single pallet and load/unload function utilizing a pallet jack or forklift
-            </p>
-          </>
-        )}
-      </div>
+
+      {video === video3 && (
+        <div className="description">
+          <button className="btn">Compact footprint</button>
+          <p>
+            Smallest, fully contained palletizing unit for a single pallet and
+            load/unload function utilizing a pallet jack or forklift
+          </p>
+        </div>
+      )}
+
       <ReactPlayer
         url={video}
         width={"65%"}
@@ -63,10 +64,12 @@ function App() {
         controls
       />
       {video === video3 && (
-          <>
-            <button className="btn btn-back-to-features" onClick={changeVideo}>Back to Features</button>
-          </>
-        )}
+        <div>
+          <button className="btn btn-back-to-features" onClick={changeVideo}>
+            Back to Features
+          </button>
+        </div>
+      )}
     </div>
   );
 }
