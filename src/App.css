@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5em;
 }
 
 .App-logo {
@@ -39,4 +45,42 @@
 
 button {
   font-size: calc(10px + 2vmin);
+}
+
+.btn {
+  border: none;
+  background-color: #e04022;
+  color: white;
+  padding: 0.5rem 1rem;
+  position: relative;
+  z-index: 10;
+}
+.btn-compact-footprint {
+  cursor: pointer;
+  top: 6.0rem;
+  right: 67%;
+  position: absolute;
+}
+
+.description {
+  margin-top: 1rem;
+  width: 25%;
+  text-align: left;
+  font-size: 15px;
+  position: absolute;
+  top: 1.0rem;
+  left: 15%;
+}
+.description p {
+  /* border: solid; */
+  margin: 0;
+  background-color: #4e4e4e;
+  color: white;
+  padding: 0.5rem;
+}
+
+.btn-back-to-features {
+  /* position: relative; */
+  top: -5.0rem;
+  cursor: pointer;
 }
